@@ -1,15 +1,13 @@
-SRCS		= main.c ft_putchar.c
-OBJS		= ${SRCS:.c=.o}
+HEADER		= ./includes/
+PATH_SRCS	= ./srcs/
+SRCS		= ${PATH_SRCS}ft_putchar.c
 NAME		= ft_putchar
 CC		= gcc
 RM		= rm -f
 CFLAGS		= -Wall -Wextra -Werror
 
-.c.o:
-		${CC} ${CFLAGS} -c $< -o ${<:.c=.o}
-
-${NAME}:	${OBJS}
-		${CC} ${CFLAGS} ${SRCS} -o ${NAME}
+${NAME}:	main.c
+		${CC} ${CFLAGS} ${SRCS} main.c -I ${HEADER} -o ${NAME}
 
 all:		${NAME}
 

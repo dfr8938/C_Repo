@@ -1,7 +1,7 @@
 HEADER		= ./includes/
 PATH_SRCS	= ./srcs/
-SRCS		= ${PATH_SRCS}ft_putchar.c ${PATH_SRCS}ft_print_reverse_alphabet.c
-NAME		= ft_print_reverse_alphabet
+SRCS		= ${PATH_SRCS}ft_putchar.c ${PATH_SRCS}ft_print_comb.c
+NAME		= ft_print_comb
 CC		= gcc
 RM		= rm -f
 CFLAGS		= -Wall -Wextra -Werror
