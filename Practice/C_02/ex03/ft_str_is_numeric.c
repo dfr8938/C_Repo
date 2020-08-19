@@ -19,6 +19,6 @@ int	ft_str_is_numeric(char *str)
 	{
 		if (!(str[i] >= 48 && str[i] <= 57))
 			return 0;
-		return 1;
 	}
+	return 1;
 }
